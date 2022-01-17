@@ -63,6 +63,9 @@ public class Cashier {
                         this.discountSum += productTotal * 0.05;
                         System.out.printf("#discount 5%% -%.2f\n", productTotal * 0.05);
                     }
+                    else {
+                        this.totalProductsSum += productTotal;
+                    }
                 }
             }
             System.out.println();
